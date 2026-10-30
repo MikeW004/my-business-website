@@ -11,9 +11,12 @@
     <header>
         <h1>Uber catering</h1>
         <nav>
-            <div class="pastries nav">Pastries</div>
-            <div class="cookies nav">Biscuits</div>
-            <div class="drinks nav">Beverages</div>
+            <div class="desktop-menu">
+                <a class="pastries nav" href="#">Pastries</a>
+                <a class="cookies nav" href="#">Biscuits</a>
+                <a class="drinks nav" href="#">Beverages</a>
+            </div>
+            <div class="hamburger-menu">hamburger</div>
         </nav>
     </header>
     <main>
@@ -22,17 +25,24 @@
             <div class="cookies hero"></div>
             <div class="drinks hero"></div>
         </section>
-        <section class="pastries">Pastries
+        <section id="pastries">
+            <h3>Pastries</h3>
             <div class="pastries container"></div>
         </section>
-        <section class="cookies">Biscuits
+        <section id="cookies">
+            <h3>Biscuits</h3>
             <div class="cookies container"></div>
         </section>
-         <section class="drinks">Beverages
+         <section id="drinks">
+            <h3>Beverages</h3>
             <div class="drinks container"></div>
         </section>
-        <section class="contact">
-            <div class="contact info"></div>
+        <section id="contact">
+            <h3>Contact us</h3>
+            <div class="contact info">
+                <p class="tel-nr">02952352252</p>
+                <p class="our-mail">ourMail@bakery.com</p>
+            </div>
             <form id="contact-form">
                 <input type="email" name="email" placeholder="ex:mymail@example.com">
                 <button type="submit">Submit</button>
@@ -40,7 +50,7 @@
         </section>
     </main>
     <footer>
-        Michael Wolde ~ 2026
+        <p>Michael Wolde ~ 2026</p>
     </footer>
     
 </body>
