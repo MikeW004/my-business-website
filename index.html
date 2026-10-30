@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
-        <h1>Uber catering</h1>
-        <nav>
-            <div class="desktop-menu">
-                <a class="pastries nav" href="#">Pastries</a>
-                <a class="cookies nav" href="#">Biscuits</a>
-                <a class="drinks nav" href="#">Beverages</a>
-            </div>
-            <div class="hamburger-menu">hamburger</div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="pastries hero"></div>
-            <div class="cookies hero"></div>
-            <div class="drinks hero"></div>
-        </section>
-        <section id="pastries">
-            <h3>Pastries</h3>
-            <div class="pastries container"></div>
-        </section>
-        <section id="cookies">
-            <h3>Biscuits</h3>
-            <div class="cookies container"></div>
-        </section>
-         <section id="drinks">
-            <h3>Beverages</h3>
-            <div class="drinks container"></div>
-        </section>
-        <section id="contact">
-            <h3>Contact us</h3>
-            <div class="contact info">
-                <p class="tel-nr">02952352252</p>
-                <p class="our-mail">ourMail@bakery.com</p>
-            </div>
-            <form id="contact-form">
-                <input type="email" name="email" placeholder="ex:mymail@example.com">
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Michael Wolde ~ 2026</p>
-    </footer>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body id="doc-body">
+        <header>
+            <h1>Uber catering</h1>
+            <button id="theme-button">Theme</button>
+            <nav>
+                <div class="desktop-menu">
+                    <a class="pastries nav" href="#">Pastries</a>
+                    <a class="cookies nav" href="#">Biscuits</a>
+                    <a class="drinks nav" href="#">Beverages</a>
+                </div>
+                <div class="hamburger-menu">hamburger</div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="pastries hero"></div>
+                <div class="cookies hero"></div>
+                <div class="drinks hero"></div>
+            </section>
+            <section id="pastries">
+                <h3>Pastries</h3>
+                <div class="pastries container"></div>
+            </section>
+            <section id="cookies">
+                <h3>Biscuits</h3>
+                <div class="cookies container"></div>
+            </section>
+            <section id="drinks">
+                <h3>Beverages</h3>
+                <div class="drinks container"></div>
+            </section>
+            <section id="contact">
+                <h3>Contact us</h3>
+                <p id="form-status"></p>
+                <div class="contact info">
+                    <p class="tel-nr">02952352252</p>
+                    <p class="our-mail">ourMail@bakery.com</p>
+                </div>
+                <form id="contact-form">
+                    <input type="text" name="name">
+                    <textarea name="addedMessage"></textarea>
+                    <input type="email" name="email" placeholder="ex:mymail@example.com">
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Michael Wolde ~ 2026</p>
+        </footer>
+        
+    </body>
 </html>
