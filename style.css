@@ -2,16 +2,34 @@
     margin: 0;
     box-sizing: border-box;
 }
-:root{
+body{
     background-color: rgb(245, 229, 194);
     font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+body.darkMode{
+    background-color: rgb(27, 12, 67);
+    color: rgb(203, 191, 235);
 }
 header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
     height: fit-content;
     min-height: 10vh;
     width: 100%;
     z-index: 3;
     border-bottom: 1px solid black;
+}
+header button{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-25%);
+    transform: translateY(25%);
+    background-color: black;
+    color: white;
 }
 h1{
     width: fit-content;
